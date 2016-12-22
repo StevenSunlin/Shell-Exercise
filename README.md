@@ -15,6 +15,12 @@
 
 # 9.3 Page232
 - declare [选项]　变量名
--- 参数列表　-r 只读; -i　整形数; -a 数组; -f 所有函数名及内容; -F 所有函数名; -x 声明为环境变量
--- let 与 declare -i
+- 参数列表　-r 只读; -i　整形数; -a 数组; -f 所有函数名及内容; -F 所有函数名; -x 声明为环境变量
+- let 与 declare -i
+- eval tempval=\$$variable1 间接引用变量的第一种格式; tempval=${!variable1} 间接引用变量的第二种格式
 
+# 9.5 Page 262
+- expr
+- bc　计算; scale ==>保留几位小数; 脚本中的格式: variable=`echo "options; expressions" | bc` ==> e.g. var3=`echo "scale=5; $var1 ^ 2" | bc`
+- 练习: 利用bc 计算半径为20的圆面积, 保留小数点后五位
+- 
