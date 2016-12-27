@@ -31,4 +31,4 @@
 - awk; echo $string | awk '{print length($0)}';; echo $string | awk '{print length($1)}';; echo $string | awk '{print substring($0,1,8)}';; echo $string | awk '{print substring)($string,25)}';;
 - awk 调用命令要使用双引号
 - I/O重定向; who | tee output 将who 输出添加到output文件中，同时屏幕打印who命令的输出内容;;　who | tee -a output 追加到output文件末尾
-- 
+- seq [选项]... 尾数;; seq [选项]... 首数 尾数;; seq [选项]... 首数 增量 尾数
